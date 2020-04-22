@@ -1,5 +1,5 @@
 body {
-  background-color: #ddd;
+  background-color: #fff;
 }
 
 #box1 {
@@ -29,6 +29,6 @@ body {
 #box5 {
   color: #ff0;
   background-color: #34b7d8;
-  width: 100px;
+  width: 120px;
 }
 /*# sourceMappingURL=vars.css.map */
