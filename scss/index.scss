@@ -1,0 +1,93 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/base";
+
+// Nesting
+.box {
+    @include width-height-padding(300px, 300px, 20px);
+    @include pos-abs-center();
+    // @include pos-abs-center-vertical();
+
+    &, &-inner {
+        border: 3px solid $border-color;
+    }
+
+    // 아래 2가지 방식의 차이 
+    // @include mq();
+    // @include mq() {
+    //     border: 1px solid #000;
+    // }
+
+    @include mq('phone') {
+        width:100%;
+        border:none;
+    }
+    @include mq('table-land') {
+        border:2px solid $border-color;
+    }
+    @include mq('desktop-big') {
+        width: 600px;
+        padding: 50px;
+        border: 10px solid $border-color;
+    }
+
+    // @media screen and (min-width: 1201px) {
+    //     border: 10px solid $border-color;
+    // }
+    // @media screen and (min-width: 601px) and (max-width: 899px) {
+    //     border: 2px solid $border-color;
+    // }
+    // @media screen and (max-width: 600px) {
+    //     border: none;
+    // }
+
+    // box-inner
+    &-inner {
+        @include width-height-padding(initial, 40px, 10px);
+
+        background-color: $color-grey;
+
+        @include mq('phone') {
+            font-size: 55px;;
+        }
+
+        // box-inner-title
+        &-title {
+            font-size: 20px;
+            color: $color-white;
+            background-color: rgba($color-black, 0.5);
+
+            @include mq('phone') {
+                font-size: 3px;;
+            }
+            @include mq('table-land') {
+                font-size: 40px;;
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 1201px) {
+//     box {
+//         border: 10px solid $border-color;
+//     }
+//     .box-inner {
+//         height: 50px;
+//     }
+// }
+// @media screen and (min-width: 601px) and (max-width: 899px) {
+//     box {
+//         border: 2px solid $border-color;
+//     }
+//     .box-inner {
+//         height: 30px;
+//     }
+// }
+// @media screen and (max-width: 600px) {
+//     box {
+//         border: none;
+//     }
+//     .box-inner {
+//         height: 30px;
+//     }
+// }
