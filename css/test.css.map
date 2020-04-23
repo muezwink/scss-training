@@ -1,10 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAGA,AEFA,KFEK,CEFK;EACN,aAAa,EAAE,KAAK;EACpB,MAAM,EAAE,cAAc;EACtB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,mBAAmB;CACnD;;AFFD,AAAA,KAAK,CAAC;ECDF,SAAS,EDEgB,KAAK;ECD9B,gBAAgB,EDCgB,IAAI;CAEvC",
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,UAAU;EACvB,SAAS,EAAE,IAAI;CAClB",
     "sources": [
-        "../sass/test.scss",
-        "../sass/_mixins.scss",
-        "../sass/partial/_styles.scss"
+        "../_playground/sass/test.scss"
     ],
     "names": [],
     "file": "test.css"

@@ -1,11 +1,18 @@
 {
     "liveSassCompile.settings.formats": [
+
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "/css"
+            "savePath": "~/../css"
             // "savePath": "~/../style"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/../dist"
         }
+
     ],
     "liveSassCompile.settings.excludeList": [
         "**/node_modules/**",
