@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,IAAI;CACf;;AAmBD,AAAA,KAAK,CAAC;EAhBF,KAAK,EAMuB,OAAO;EALnC,gBAAgB,EAKqB,OAAO;CAY/C;;AAED,AAAA,KAAK,CAAC;EApBF,KAAK,EAQuB,IAAI;EAPhC,gBAAgB,EAOkB,OAAO;CAc5C;;AAED,AAAA,KAAK,CAAC;EAxBF,KAAK,EAYuB,OAAO;EAXnC,gBAAgB,EAWqB,IAAI;CAc5C",
+    "sources": [
+        "../sass/if.scss"
+    ],
+    "names": [],
+    "file": "if.css"
+}
