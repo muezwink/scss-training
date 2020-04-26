@@ -1,30 +1,20 @@
-// px, em, rem, vw, vh
-// em : 요소에 지정된 폰트사이즈 기준(요소, 브라우저)
-// #box1 {
-//     font-size: 20px; //1em = 20px;
-//     width:25em; // 500px = 20 * 25em
-//     background-color: #aaa;
-// }
+// px
+// em, rem
+// vw(viewport width), vh(viewport height)
 
-// 해당요소의 폰트 사이즈가 없을 경우 브라우저의 기본 폰트 사이즈에 대비해서 처리된다.
-// #box2 {
-//     // width:500px; -> 25em
-//     width: 25em;
-//     background-color: #777;
-// }
-
-// rem : root에 지정된 폰트 사이즈(최상위 폰트사이즈 html)
 html {
     // 기본 브라우저 폰트 사이즈는 16px
     // font-size: 10px; // 1rem
 
     // 16px의 62.5%가 10px
-    font-size: 62.5%; // 10px = 1rem
+    // font-size: 62.5%; // 10px = 1rem
+    font-size: 20px; // 10px = 1rem
 }
 
 #box1 {
+    width: 80vw;
+    height: 50vh;
     font-size: 3rem;
-    width:25rem;
     background-color: #aaa;
 }
 
