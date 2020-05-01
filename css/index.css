@@ -288,6 +288,7 @@ header {
   background-image: -webkit-gradient(linear, left top, right top, from(#285a91), to(#1f9cfd)), url(../images/header-image.jpg);
   background-image: linear-gradient(to right, #285a91 0%, #1f9cfd 100%), url(../images/header-image.jpg);
   background-blend-mode: multiply;
+  background-size: cover;
   position: relative;
 }
 
