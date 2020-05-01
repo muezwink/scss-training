@@ -212,6 +212,22 @@ h3 {
   top: 1rem;
 }
 
+.nav-checkbox:checked ~ .nav-button .nav-icon {
+  background-color: transparent;
+}
+
+.nav-checkbox:checked ~ .nav-button .nav-icon::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.nav-checkbox:checked ~ .nav-button .nav-icon::after {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
 header {
   width: 100%;
   height: 80vh;
